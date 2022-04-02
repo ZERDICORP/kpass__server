@@ -1,0 +1,12 @@
+javac -cp lib/*:. com/kpass/www/Main.java
+
+mkdir -p ../build
+
+cp -r lib/ ../build
+cp -r resources/ ../build
+
+jar -cfe ../build/kpass__server.jar com.kpass.www.Main .
+
+echo "java -cp kpass__server.jar:lib/* com.kpass.www.Main" > ../build/run
+
+chmod +x ../build/run
