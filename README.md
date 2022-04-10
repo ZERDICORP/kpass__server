@@ -36,14 +36,14 @@ $ mysql -u root -p kpass < resources/mysql_dump/kpass.sql
 ```
 
 #### Setup config
-> Example setup
+> Replace all values between <>.
 ```
 $ vim resources/app.cfg
 port = 8000
-databaseName = kpass
-databasePassword = Qwerty123
-emailSender = my.kpass.server@gmail.com
-emailPassword = Qwerty123
+databaseName = <name>
+databasePassword = <password>
+emailSender = <email>
+emailPassword = <password>
 ```
 
 #### Now everything is ready to run
